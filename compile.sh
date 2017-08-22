@@ -1,3 +1,4 @@
 #!/bin/bash
 
-hugo -s malex-web
+cd malex-web
+hugo

@@ -1,7 +1,6 @@
 ---
 title: "Representation"
 date: 2017-08-22T18:04:08+02:00
-draft: true
 ---
 
 ## What's inside

@@ -1,7 +1,6 @@
 ---
 title: "Installation"
 date: 2017-08-22T18:03:41+02:00
-draft: true
 ---
 
 # Install
