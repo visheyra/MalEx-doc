@@ -7,7 +7,7 @@
     <meta name="description" content="">
 
 
-    <title> :: MalEx</title>
+    <title>Docs :: MalEx</title>
     <link rel="shortcut icon" href="/MalEx-doc/images/favicon.png" type="image/x-icon" />
     <link href="/MalEx-doc/css/nucleus.css" rel="stylesheet">
     <link href="/MalEx-doc/css/font-awesome.min.css" rel="stylesheet">
@@ -31,7 +31,7 @@
     
 
   </head>
-  <body class="" data-url="/MalEx-doc/_header/">
+  <body class="" data-url="/MalEx-doc/docs/">
     <nav id="sidebar" class="">
 
 
@@ -84,8 +84,8 @@
   
     
     <li data-nav-id="/MalEx-doc/docs/" class="dd-item 
-        
-        
+        parent
+        active
         
         ">
       <a href="/MalEx-doc/docs/">
@@ -95,7 +95,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -210,6 +210,11 @@
                 <span class="links">
                 
 
+
+
+
+ <a href='/MalEx-doc/'></a> > Docs
+
  
 
    
@@ -217,11 +222,7 @@
             </div>
             <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents">
-<ul>
-<li><a href="#malex">Malex</a></li>
-</ul>
-</nav>
+
     </div>
 </div>
 
@@ -230,7 +231,7 @@
         
         <div id="body-inner">
           
-            <h1></h1>
+            <h1>Docs</h1>
           
 
 
@@ -238,14 +239,103 @@
 
 
 
-<h1 id="malex">Malex</h1>
-
-<p>Binary abstractor</p>
-
-
 <footer class=" footline" >
 	
 </footer>
+
+
+
+	
+
+	<div class="extra-pagination inner">
+	<nav class="pagination" role="navigation">
+	
+	<span class="page-number">Page 1 on 1</span>
+	
+</nav>
+
+	</div>
+
+	
+	   <article class="post docs">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/MalEx-doc/docs/usage/">Usage</a></h2>
+    </header>
+    <section class="post-excerpt">
+        <p>MalEx is an utility which is run from the command line.
+Options    options switch usage     help -h Show help   binaries -b List of the binaries&rsquo; path   shared -s allow the loading of shared resources (would take much more time)   match -m Determine function isomorphism accross the binaries loaded    Examples  Run MalEx on multiple binaries:  app/app. <a class="read-more" href="/MalEx-doc/docs/usage/">&raquo;</a></p>
+    </section>
+    <footer class=" footline" >
+         
+        
+
+        
+        
+
+    </footer>
+</article>
+
+
+
+
+	
+	   <article class="post docs">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/MalEx-doc/docs/representation/">Representation</a></h2>
+    </header>
+    <section class="post-excerpt">
+        <p>What&rsquo;s inside l8r
+How the dependancies works. This tool generate representation of binaries using YAML meta language. Three type of assets can be generated.
+The header file File containing all the resources that can be loaded for a particular binary.
+example:
+file: binary_test arch: AMD64 metas: - something - something_else artefacts: - name: main filename: main.yaml symbol_name: main - name: call filename: call.yaml symbol_name: main  The function file File containing all the informations that belongs to a particular symbol within a binary. <a class="read-more" href="/MalEx-doc/docs/representation/">&raquo;</a></p>
+    </section>
+    <footer class=" footline" >
+         
+        
+
+        
+        
+
+    </footer>
+</article>
+
+
+
+
+	
+	   <article class="post docs">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/MalEx-doc/docs/installation/">Installation</a></h2>
+    </header>
+    <section class="post-excerpt">
+        <p>Install MalEx is a python project which uses python2. In order to run properly malex need to be run in a virtualenv. You can find below all the instruction to install MalEx in a virtualenv
+Requirements The following programs needs to be installed in order to install and run MalEx
+ Python 2.7 Virtualenv  Step by step  Go to the root of the directory execute command virtualenv -p /path/to/python2 $some_name enter the virtualenv with source $some_name/bin/activate execute command pip2 install -r requirements. <a class="read-more" href="/MalEx-doc/docs/installation/">&raquo;</a></p>
+    </section>
+    <footer class=" footline" >
+         
+        
+
+        
+        
+
+    </footer>
+</article>
+
+
+
+
+	
+
+	<div style="margin-bottom:2rem"></div>
+
+	<nav class="pagination" role="navigation">
+	
+	<span class="page-number">Page 1 on 1</span>
+	
+</nav>
+
 
 
 
@@ -281,8 +371,6 @@
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -297,21 +385,8 @@
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
                         
-            
-            
-                
+                        
                     
                 
                 
@@ -340,6 +415,22 @@
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -350,8 +441,10 @@
 
 
         
+            <a class="nav nav-prev" href="/MalEx-doc/" title=""> <i class="fa fa-chevron-left"></i></a>
         
-            <a class="nav nav-next" href="/MalEx-doc/docs/" title="Docs" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        
+            <a class="nav nav-next" href="/MalEx-doc/docs/usage/" title="Usage" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 
@@ -378,4 +471,3 @@
 
   </body>
 </html>
-

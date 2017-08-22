@@ -7,7 +7,7 @@
     <meta name="description" content="">
 
 
-    <title> :: MalEx</title>
+    <title>Usage :: MalEx</title>
     <link rel="shortcut icon" href="/MalEx-doc/images/favicon.png" type="image/x-icon" />
     <link href="/MalEx-doc/css/nucleus.css" rel="stylesheet">
     <link href="/MalEx-doc/css/font-awesome.min.css" rel="stylesheet">
@@ -31,7 +31,7 @@
     
 
   </head>
-  <body class="" data-url="/MalEx-doc/_header/">
+  <body class="" data-url="/MalEx-doc/docs/usage/">
     <nav id="sidebar" class="">
 
 
@@ -84,7 +84,7 @@
   
     
     <li data-nav-id="/MalEx-doc/docs/" class="dd-item 
-        
+        parent
         
         
         ">
@@ -95,7 +95,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -118,7 +118,7 @@
   
     
       <li data-nav-id="/MalEx-doc/docs/usage/" class="dd-item
-     
+     active
       ">
         <a href="/MalEx-doc/docs/usage/">
         <span>Usage</span> 
@@ -210,6 +210,16 @@
                 <span class="links">
                 
 
+
+
+
+
+
+
+ <a href='/MalEx-doc/'></a> > <a href='/MalEx-doc/docs/'>Docs</a> > Usage
+
+ 
+
  
 
    
@@ -219,7 +229,11 @@
     <div class="wrapper">
 <nav id="TableOfContents">
 <ul>
-<li><a href="#malex">Malex</a></li>
+<li>
+<ul>
+<li><a href="#options">Options</a></li>
+<li><a href="#examples">Examples</a></li>
+</ul></li>
 </ul>
 </nav>
     </div>
@@ -230,7 +244,7 @@
         
         <div id="body-inner">
           
-            <h1></h1>
+            <h1>Usage</h1>
           
 
 
@@ -238,9 +252,61 @@
 
 
 
-<h1 id="malex">Malex</h1>
+<p>MalEx is an utility which is run from the command line.</p>
 
-<p>Binary abstractor</p>
+<h2 id="options">Options</h2>
+
+<table>
+<thead>
+<tr>
+<th align="center">options</th>
+<th align="center">switch</th>
+<th align="center">usage</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">help</td>
+<td align="center">-h</td>
+<td align="center">Show help</td>
+</tr>
+
+<tr>
+<td align="center">binaries</td>
+<td align="center">-b</td>
+<td align="center">List of the binaries&rsquo; path</td>
+</tr>
+
+<tr>
+<td align="center">shared</td>
+<td align="center">-s</td>
+<td align="center">allow the loading of shared resources (would take much more time)</td>
+</tr>
+
+<tr>
+<td align="center">match</td>
+<td align="center">-m</td>
+<td align="center">Determine function isomorphism accross the binaries loaded</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="examples">Examples</h2>
+
+<ul>
+<li>Run MalEx on multiple binaries:</li>
+</ul>
+
+<pre><code>app/app.py -b path/to/binary path/to/other/binary
+</code></pre>
+
+<ul>
+<li>Run MalEx with sideloading of shared dependancies</li>
+</ul>
+
+<pre><code>app/app.py -b path/to/binary path/to/other/binary -s
+</code></pre>
 
 
 <footer class=" footline" >
@@ -281,8 +347,6 @@
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -297,21 +361,6 @@
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
                     
                 
                 
@@ -329,6 +378,25 @@
             
                 
                     
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
                 
                 
 
@@ -350,8 +418,10 @@
 
 
         
+            <a class="nav nav-prev" href="/MalEx-doc/docs/" title="Docs"> <i class="fa fa-chevron-left"></i></a>
         
-            <a class="nav nav-next" href="/MalEx-doc/docs/" title="Docs" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        
+            <a class="nav nav-next" href="/MalEx-doc/docs/representation/" title="Representation" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 

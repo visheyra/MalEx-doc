@@ -7,7 +7,7 @@
     <meta name="description" content="">
 
 
-    <title> :: MalEx</title>
+    <title>Representation :: MalEx</title>
     <link rel="shortcut icon" href="/MalEx-doc/images/favicon.png" type="image/x-icon" />
     <link href="/MalEx-doc/css/nucleus.css" rel="stylesheet">
     <link href="/MalEx-doc/css/font-awesome.min.css" rel="stylesheet">
@@ -31,7 +31,7 @@
     
 
   </head>
-  <body class="" data-url="/MalEx-doc/_header/">
+  <body class="" data-url="/MalEx-doc/docs/representation/">
     <nav id="sidebar" class="">
 
 
@@ -84,7 +84,7 @@
   
     
     <li data-nav-id="/MalEx-doc/docs/" class="dd-item 
-        
+        parent
         
         
         ">
@@ -95,7 +95,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -138,7 +138,7 @@
   
     
       <li data-nav-id="/MalEx-doc/docs/representation/" class="dd-item
-     
+     active
       ">
         <a href="/MalEx-doc/docs/representation/">
         <span>Representation</span> 
@@ -210,6 +210,16 @@
                 <span class="links">
                 
 
+
+
+
+
+
+
+ <a href='/MalEx-doc/'></a> > <a href='/MalEx-doc/docs/'>Docs</a> > Representation
+
+ 
+
  
 
    
@@ -219,7 +229,19 @@
     <div class="wrapper">
 <nav id="TableOfContents">
 <ul>
-<li><a href="#malex">Malex</a></li>
+<li>
+<ul>
+<li><a href="#what-s-inside">What&rsquo;s inside</a></li>
+<li><a href="#how-the-dependancies-works">How the dependancies works.</a>
+<ul>
+<li>
+<ul>
+<li><a href="#the-header-file">The header file</a></li>
+<li><a href="#the-function-file">The function file</a></li>
+<li><a href="#the-function-calling-graph-file">The function calling graph file</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
 </ul>
 </nav>
     </div>
@@ -230,7 +252,7 @@
         
         <div id="body-inner">
           
-            <h1></h1>
+            <h1>Representation</h1>
           
 
 
@@ -238,9 +260,103 @@
 
 
 
-<h1 id="malex">Malex</h1>
+<h2 id="what-s-inside">What&rsquo;s inside</h2>
 
-<p>Binary abstractor</p>
+<p><code>l8r</code></p>
+
+<h2 id="how-the-dependancies-works">How the dependancies works.</h2>
+
+<p>This tool generate representation of binaries using YAML meta language. Three type of assets can be generated.</p>
+
+<h4 id="the-header-file">The header file</h4>
+
+<p>File containing all the resources that can be loaded for a particular binary.</p>
+
+<p><strong>example</strong>:</p>
+
+<pre><code class="language-yaml">file: binary_test
+arch: AMD64
+metas:
+  - something
+  - something_else
+artefacts:
+  -
+    name: main
+    filename: main.yaml
+    symbol_name: main
+  -
+    name: call
+    filename: call.yaml
+    symbol_name: main
+</code></pre>
+
+<h4 id="the-function-file">The function file</h4>
+
+<p>File containing all the informations that belongs to a particular symbol within a binary.</p>
+
+<pre><code class="language-yaml">main:
+  metas:
+    start: 0x4006ae # offset of the function
+    size: 2 # number of nodes in the graph
+  nodes: # list of the logic blocks of the function
+    -
+      step: 0 # ofsset in byte to the entry of the function
+      links: # list of the call targets of the logic block call target as expressed as labeled func in header file
+        - call
+      instructions: # instructions in the logic block
+        - PUSH RBP
+        - MOV RBP, RSP
+      regs: # VSA of the logic block (link for VSA below)
+        -
+          name: RAX
+          set:
+              min: 0
+              max: 7
+        -
+          name: RDI
+          set:
+              min: 14
+              max: 28
+
+    -
+      step: 11
+      instructions:
+        - POP RDI
+        - RET
+      regs:
+        -
+          name: RDI
+          set:
+            min: -4
+            max: 13
+
+</code></pre>
+
+<h4 id="the-function-calling-graph-file">The function calling graph file</h4>
+
+<p>File containing a finite automata which represents the Function Calling Graph of a program</p>
+
+<pre><code class="language-yaml">file: binary_test_other
+graph:
+  -
+    name: func1
+    offset: 0xDEADC0DE
+    callers:
+      - func1
+      - func3
+    callees:
+      - func2
+  -
+    name: func2
+    offset: 0xBADBEEF
+    callers:
+      - func1
+  -
+    name: func3
+    offset: 0xBADC0FFEE
+    callees:
+      - func1
+</code></pre>
 
 
 <footer class=" footline" >
@@ -281,8 +397,6 @@
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -297,21 +411,8 @@
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
                         
-            
-            
-                
+                        
                     
                 
                 
@@ -329,6 +430,26 @@
             
                 
                     
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
                 
                 
 
@@ -350,8 +471,10 @@
 
 
         
+            <a class="nav nav-prev" href="/MalEx-doc/docs/usage/" title="Usage"> <i class="fa fa-chevron-left"></i></a>
         
-            <a class="nav nav-next" href="/MalEx-doc/docs/" title="Docs" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        
+            <a class="nav nav-next" href="/MalEx-doc/docs/installation/" title="Installation" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 
