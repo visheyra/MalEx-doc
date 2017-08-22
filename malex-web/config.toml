@@ -1,4 +1,4 @@
-baseURL = "https://visheyra.github.io/MalEx"
+baseURL = "https://visheyra.github.io/MalEx-doc"
 languageCode = "en-us"
 title = "MalEx"
 theme = "docdock"
