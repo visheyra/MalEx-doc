@@ -3,20 +3,20 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://visheyra.github.io/MalEx/_header/</loc>
+    <loc>https://visheyra.github.io/MalEx-doc/_header/</loc>
   </url>
   
   <url>
-    <loc>https://visheyra.github.io/MalEx/</loc>
+    <loc>https://visheyra.github.io/MalEx-doc/</loc>
   </url>
   
   <url>
-    <loc>https://visheyra.github.io/MalEx/categories/</loc>
+    <loc>https://visheyra.github.io/MalEx-doc/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://visheyra.github.io/MalEx/tags/</loc>
+    <loc>https://visheyra.github.io/MalEx-doc/tags/</loc>
     <priority>0</priority>
   </url>
   
