@@ -6,44 +6,9 @@
     <description>Recent content on MalEx</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 22 Aug 2017 18:14:19 +0200</lastBuildDate>
     
 	<atom:link href="https://visheyra.github.io/MalEx-doc/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Usage</title>
-      <link>https://visheyra.github.io/MalEx-doc/docs/usage/</link>
-      <pubDate>Tue, 22 Aug 2017 18:14:19 +0200</pubDate>
-      
-      <guid>https://visheyra.github.io/MalEx-doc/docs/usage/</guid>
-      <description>MalEx is an utility which is run from the command line.
-Options    options switch usage     help -h Show help   binaries -b List of the binaries&amp;rsquo; path   shared -s allow the loading of shared resources (would take much more time)   match -m Determine function isomorphism accross the binaries loaded    Examples  Run MalEx on multiple binaries:  app/app.</description>
-    </item>
-    
-    <item>
-      <title>Representation</title>
-      <link>https://visheyra.github.io/MalEx-doc/docs/representation/</link>
-      <pubDate>Tue, 22 Aug 2017 18:04:08 +0200</pubDate>
-      
-      <guid>https://visheyra.github.io/MalEx-doc/docs/representation/</guid>
-      <description>What&amp;rsquo;s inside l8r
-How the dependancies works. This tool generate representation of binaries using YAML meta language. Three type of assets can be generated.
-The header file File containing all the resources that can be loaded for a particular binary.
-example:
-file: binary_test arch: AMD64 metas: - something - something_else artefacts: - name: main filename: main.yaml symbol_name: main - name: call filename: call.yaml symbol_name: main  The function file File containing all the informations that belongs to a particular symbol within a binary.</description>
-    </item>
-    
-    <item>
-      <title>Installation</title>
-      <link>https://visheyra.github.io/MalEx-doc/docs/installation/</link>
-      <pubDate>Tue, 22 Aug 2017 18:03:41 +0200</pubDate>
-      
-      <guid>https://visheyra.github.io/MalEx-doc/docs/installation/</guid>
-      <description>Install MalEx is a python project which uses python2. In order to run properly malex need to be run in a virtualenv. You can find below all the instruction to install MalEx in a virtualenv
-Requirements The following programs needs to be installed in order to install and run MalEx
- Python 2.7 Virtualenv  Step by step  Go to the root of the directory execute command virtualenv -p /path/to/python2 $some_name enter the virtualenv with source $some_name/bin/activate execute command pip2 install -r requirements.</description>
-    </item>
     
     <item>
       <title></title>

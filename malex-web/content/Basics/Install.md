@@ -1,6 +1,8 @@
 ---
-title: "Installation"
-date: 2017-08-22T18:03:41+02:00
+title: "Install"
+date: 2017-08-26T13:24:47+02:00
+draft: true
+weight: 2
 ---
 
 # Install

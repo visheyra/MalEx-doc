@@ -1,7 +1,10 @@
 ---
 title: "Usage"
-date: 2017-08-22T18:14:19+02:00
+date: 2017-08-26T13:24:55+02:00
+draft: true
+weight: 3
 ---
+
 
 MalEx is an utility which is run from the command line.
 

@@ -1,26 +1,5 @@
 [
 {
-	"uri": "https://visheyra.github.io/MalEx-doc/docs/usage/",
-	"title": "Usage",
-	"tags": [],
-	"description": "",
-	"content": " MalEx is an utility which is run from the command line.\nOptions    options switch usage     help -h Show help   binaries -b List of the binaries\u0026rsquo; path   shared -s allow the loading of shared resources (would take much more time)   match -m Determine function isomorphism accross the binaries loaded    Examples  Run MalEx on multiple binaries:  app/app.py -b path/to/binary path/to/other/binary   Run MalEx with sideloading of shared dependancies  app/app.py -b path/to/binary path/to/other/binary -s  "
-},
-{
-	"uri": "https://visheyra.github.io/MalEx-doc/docs/representation/",
-	"title": "Representation",
-	"tags": [],
-	"description": "",
-	"content": " What\u0026rsquo;s inside l8r\nHow the dependancies works. This tool generate representation of binaries using YAML meta language. Three type of assets can be generated.\nThe header file File containing all the resources that can be loaded for a particular binary.\nexample:\nfile: binary_test arch: AMD64 metas: - something - something_else artefacts: - name: main filename: main.yaml symbol_name: main - name: call filename: call.yaml symbol_name: main  The function file File containing all the informations that belongs to a particular symbol within a binary.\nmain: metas: start: 0x4006ae # offset of the function size: 2 # number of nodes in the graph nodes: # list of the logic blocks of the function - step: 0 # ofsset in byte to the entry of the function links: # list of the call targets of the logic block call target as expressed as labeled func in header file - call instructions: # instructions in the logic block - PUSH RBP - MOV RBP, RSP regs: # VSA of the logic block (link for VSA below) - name: RAX set: min: 0 max: 7 - name: RDI set: min: 14 max: 28 - step: 11 instructions: - POP RDI - RET regs: - name: RDI set: min: -4 max: 13  The function calling graph file File containing a finite automata which represents the Function Calling Graph of a program\nfile: binary_test_other graph: - name: func1 offset: 0xDEADC0DE callers: - func1 - func3 callees: - func2 - name: func2 offset: 0xBADBEEF callers: - func1 - name: func3 offset: 0xBADC0FFEE callees: - func1  "
-},
-{
-	"uri": "https://visheyra.github.io/MalEx-doc/docs/installation/",
-	"title": "Installation",
-	"tags": [],
-	"description": "",
-	"content": " Install MalEx is a python project which uses python2. In order to run properly malex need to be run in a virtualenv. You can find below all the instruction to install MalEx in a virtualenv\nRequirements The following programs needs to be installed in order to install and run MalEx\n Python 2.7 Virtualenv  Step by step  Go to the root of the directory execute command virtualenv -p /path/to/python2 $some_name enter the virtualenv with source $some_name/bin/activate execute command pip2 install -r requirements.txt everything will work fine by now  Dependancies    package usage link     angr reverse engineering framework angr   angrutils export visual representation of resources extracted by angr angrutils   networkx manipulation, study of structures and dynamics of complex networks also used by angr networkx   coloredlogs fancy logger coloredlogs    "
-},
-{
 	"uri": "https://visheyra.github.io/MalEx-doc/_header/",
 	"title": "",
 	"tags": [],
@@ -37,13 +16,6 @@
 {
 	"uri": "https://visheyra.github.io/MalEx-doc/categories/",
 	"title": "Categories",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
-	"uri": "https://visheyra.github.io/MalEx-doc/docs/",
-	"title": "Docs",
 	"tags": [],
 	"description": "",
 	"content": ""
