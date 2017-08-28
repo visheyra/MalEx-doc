@@ -7,7 +7,7 @@ weight: 5
 
 ## What's inside
 
-`l8r`
+`soon`
 
 ## How the dependancies works.
 
