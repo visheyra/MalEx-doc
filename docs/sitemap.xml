@@ -3,15 +3,88 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://visheyra.github.io/MalEx-doc/isomorphism-detection/the-vf2-algorithm/</loc>
+    <lastmod>2017-08-26T13:26:10+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://visheyra.github.io/MalEx-doc/abstraction/control-flow-recovery/</loc>
+    <lastmod>2017-08-26T13:25:34+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://visheyra.github.io/MalEx-doc/basics/</loc>
+    <lastmod>2017-08-26T13:24:40+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://visheyra.github.io/MalEx-doc/basics/what-is-malex/</loc>
+    <lastmod>2017-08-26T13:24:40+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://visheyra.github.io/MalEx-doc/isomorphism-detection/program-level-isomorphism-detection/</loc>
+    <lastmod>2017-08-26T13:26:26+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://visheyra.github.io/MalEx-doc/abstraction/value-set-analysis/</loc>
+    <lastmod>2017-08-26T13:25:43+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://visheyra.github.io/MalEx-doc/basics/install/</loc>
+    <lastmod>2017-08-26T13:24:47+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://visheyra.github.io/MalEx-doc/isomorphism-detection/function-level-isomorphism-detection/</loc>
+    <lastmod>2017-08-26T13:26:37+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://visheyra.github.io/MalEx-doc/abstraction/function-call-graph/</loc>
+    <lastmod>2017-08-26T13:25:52+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://visheyra.github.io/MalEx-doc/basics/usage/</loc>
+    <lastmod>2017-08-26T13:24:55+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://visheyra.github.io/MalEx-doc/abstraction/instructions/</loc>
+    <lastmod>2017-08-26T13:25:52+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://visheyra.github.io/MalEx-doc/abstraction/representation/</loc>
+    <lastmod>2017-08-26T13:33:18+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://visheyra.github.io/MalEx-doc/_header/</loc>
   </url>
   
   <url>
     <loc>https://visheyra.github.io/MalEx-doc/</loc>
+    <lastmod>2017-08-26T13:26:10+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://visheyra.github.io/MalEx-doc/abstraction/</loc>
+    <lastmod>2017-08-26T13:25:34+02:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://visheyra.github.io/MalEx-doc/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://visheyra.github.io/MalEx-doc/isomorphism-detection/</loc>
+    <lastmod>2017-08-26T13:26:10+02:00</lastmod>
     <priority>0</priority>
   </url>
   

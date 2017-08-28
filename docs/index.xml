@@ -6,9 +6,121 @@
     <description>Recent content on MalEx</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Sat, 26 Aug 2017 13:26:10 +0200</lastBuildDate>
     
 	<atom:link href="https://visheyra.github.io/MalEx-doc/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>The VF2 Algorithm</title>
+      <link>https://visheyra.github.io/MalEx-doc/isomorphism-detection/the-vf2-algorithm/</link>
+      <pubDate>Sat, 26 Aug 2017 13:26:10 +0200</pubDate>
+      
+      <guid>https://visheyra.github.io/MalEx-doc/isomorphism-detection/the-vf2-algorithm/</guid>
+      <description>Algorithm The VF algorithm is an improvement of the VF algorithm. The application of this algorithm is to detect isomorphism and subgraph isomorphism. The improvement of VF2 is the requirement of a lower complexity (from O(N^2) to O(N))
+How does it works This algorithm implements a naive detection of isomorphism. In fact, it tries to map every node in a graph G into another graph G&amp;rsquo;. This algorithm proceed node per node and</description>
+    </item>
+    
+    <item>
+      <title>Control Flow Recovery</title>
+      <link>https://visheyra.github.io/MalEx-doc/abstraction/control-flow-recovery/</link>
+      <pubDate>Sat, 26 Aug 2017 13:25:34 +0200</pubDate>
+      
+      <guid>https://visheyra.github.io/MalEx-doc/abstraction/control-flow-recovery/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>What Is Malex</title>
+      <link>https://visheyra.github.io/MalEx-doc/basics/what-is-malex/</link>
+      <pubDate>Sat, 26 Aug 2017 13:24:40 +0200</pubDate>
+      
+      <guid>https://visheyra.github.io/MalEx-doc/basics/what-is-malex/</guid>
+      <description>MalEx MalEx is tool which aim to translate a binary to an abstract representation which will be used for further processing and perform naive isomorphism detection.
+How does it works MalEx extracts the following information from binaries:
+ Function Calling Graph of the whole program Control Flow Graph of each function defined in the binary Value set of each register for each logic block in a function Assembly instructions  Once these informations has been extracted, the data is structured in a yaml file which can later be analysed by other solutions.</description>
+    </item>
+    
+    <item>
+      <title>Program Level Isomorphism Detection</title>
+      <link>https://visheyra.github.io/MalEx-doc/isomorphism-detection/program-level-isomorphism-detection/</link>
+      <pubDate>Sat, 26 Aug 2017 13:26:26 +0200</pubDate>
+      
+      <guid>https://visheyra.github.io/MalEx-doc/isomorphism-detection/program-level-isomorphism-detection/</guid>
+      <description>Idea The idea behind program level detection is simple. In MalEx it means that once the control flow graph of a binary is recovered, it can be compared to such graphs from other binaries through the VF2 algorithm.
+Examples soon</description>
+    </item>
+    
+    <item>
+      <title>Value Set Analysis</title>
+      <link>https://visheyra.github.io/MalEx-doc/abstraction/value-set-analysis/</link>
+      <pubDate>Sat, 26 Aug 2017 13:25:43 +0200</pubDate>
+      
+      <guid>https://visheyra.github.io/MalEx-doc/abstraction/value-set-analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Install</title>
+      <link>https://visheyra.github.io/MalEx-doc/basics/install/</link>
+      <pubDate>Sat, 26 Aug 2017 13:24:47 +0200</pubDate>
+      
+      <guid>https://visheyra.github.io/MalEx-doc/basics/install/</guid>
+      <description>Install MalEx is a python project which uses python2. In order to run properly malex need to be run in a virtualenv. You can find below all the instruction to install MalEx in a virtualenv
+Requirements The following programs needs to be installed in order to install and run MalEx
+ Python 2.7 Virtualenv  Step by step  Go to the root of the directory execute command virtualenv -p /path/to/python2 $some_name enter the virtualenv with source $some_name/bin/activate execute command pip2 install -r requirements.</description>
+    </item>
+    
+    <item>
+      <title>Function Level Isomorphism Detection</title>
+      <link>https://visheyra.github.io/MalEx-doc/isomorphism-detection/function-level-isomorphism-detection/</link>
+      <pubDate>Sat, 26 Aug 2017 13:26:37 +0200</pubDate>
+      
+      <guid>https://visheyra.github.io/MalEx-doc/isomorphism-detection/function-level-isomorphism-detection/</guid>
+      <description>Idea The idea behind function level detection is simple. In MalEx it means that every functions symbol that can be extracted from a binary will be compared. In a first time, the control flow of the symbols are extracted as DiGraph&amp;rsquo;s. Those DiGraph are then matched one against each using VF2 Algorithm to detect Isomorphism.
+Examples soon</description>
+    </item>
+    
+    <item>
+      <title>Function Call Graph</title>
+      <link>https://visheyra.github.io/MalEx-doc/abstraction/function-call-graph/</link>
+      <pubDate>Sat, 26 Aug 2017 13:25:52 +0200</pubDate>
+      
+      <guid>https://visheyra.github.io/MalEx-doc/abstraction/function-call-graph/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Usage</title>
+      <link>https://visheyra.github.io/MalEx-doc/basics/usage/</link>
+      <pubDate>Sat, 26 Aug 2017 13:24:55 +0200</pubDate>
+      
+      <guid>https://visheyra.github.io/MalEx-doc/basics/usage/</guid>
+      <description>MalEx is an utility which is run from the command line.
+Options    options switch usage     help -h Show help   binaries -b List of the binaries&amp;rsquo; path   shared -s allow the loading of shared resources (would take much more time)   match -m Determine function isomorphism accross the binaries loaded    Examples  Run MalEx on multiple binaries:  app/app.</description>
+    </item>
+    
+    <item>
+      <title>Instructions</title>
+      <link>https://visheyra.github.io/MalEx-doc/abstraction/instructions/</link>
+      <pubDate>Sat, 26 Aug 2017 13:25:52 +0200</pubDate>
+      
+      <guid>https://visheyra.github.io/MalEx-doc/abstraction/instructions/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Representation</title>
+      <link>https://visheyra.github.io/MalEx-doc/abstraction/representation/</link>
+      <pubDate>Sat, 26 Aug 2017 13:33:18 +0200</pubDate>
+      
+      <guid>https://visheyra.github.io/MalEx-doc/abstraction/representation/</guid>
+      <description>What&amp;rsquo;s inside l8r
+How the dependancies works. This tool generate representation of binaries using YAML meta language. Three type of assets can be generated.
+The header file File containing all the resources that can be loaded for a particular binary.
+example:
+file: binary_test arch: AMD64 metas: - something - something_else artefacts: - name: main filename: main.yaml symbol_name: main - name: call filename: call.yaml symbol_name: main  The function file File containing all the informations that belongs to a particular symbol within a binary.</description>
+    </item>
     
     <item>
       <title></title>

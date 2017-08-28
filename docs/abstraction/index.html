@@ -7,7 +7,7 @@
     <meta name="description" content="">
 
 
-    <title> :: MalEx</title>
+    <title>Abstractions :: MalEx</title>
     <link rel="shortcut icon" href="/MalEx-doc/images/favicon.png" type="image/x-icon" />
     <link href="/MalEx-doc/css/nucleus.css" rel="stylesheet">
     <link href="/MalEx-doc/css/font-awesome.min.css" rel="stylesheet">
@@ -31,7 +31,7 @@
     
 
   </head>
-  <body class="" data-url="/MalEx-doc/_header/">
+  <body class="" data-url="/MalEx-doc/abstraction/">
     <nav id="sidebar" class="">
 
 
@@ -186,7 +186,7 @@
     
     <li data-nav-id="/MalEx-doc/isomorphism-detection/" class="dd-item 
         
-        
+        active
         
         ">
       <a href="/MalEx-doc/isomorphism-detection/">
@@ -286,8 +286,8 @@
   
     
     <li data-nav-id="/MalEx-doc/abstraction/" class="dd-item 
-        
-        
+        parent
+        active
         
         ">
       <a href="/MalEx-doc/abstraction/">
@@ -297,7 +297,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -452,6 +452,11 @@
                 <span class="links">
                 
 
+
+
+
+ <a href='/MalEx-doc/'></a> > Abstractions
+
  
 
    
@@ -459,11 +464,7 @@
             </div>
             <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents">
-<ul>
-<li><a href="#malex">Malex</a></li>
-</ul>
-</nav>
+
     </div>
 </div>
 
@@ -472,7 +473,7 @@
         
         <div id="body-inner">
           
-            <h1></h1>
+            <h1>Abstractions</h1>
           
 
 
@@ -480,14 +481,142 @@
 
 
 
-<h1 id="malex">Malex</h1>
-
-<p>Binary abstractor</p>
-
-
 <footer class=" footline" >
 	
 </footer>
+
+
+
+	
+
+	<div class="extra-pagination inner">
+	<nav class="pagination" role="navigation">
+	
+	<span class="page-number">Page 1 on 1</span>
+	
+</nav>
+
+	</div>
+
+	
+	   <article class="post abstraction">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/MalEx-doc/abstraction/control-flow-recovery/">Control Flow Recovery</a></h2>
+    </header>
+    <section class="post-excerpt">
+        <p> <a class="read-more" href="/MalEx-doc/abstraction/control-flow-recovery/">&raquo;</a></p>
+    </section>
+    <footer class=" footline" >
+         
+        
+
+        
+        
+
+    </footer>
+</article>
+
+
+
+
+	
+	   <article class="post abstraction">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/MalEx-doc/abstraction/value-set-analysis/">Value Set Analysis</a></h2>
+    </header>
+    <section class="post-excerpt">
+        <p> <a class="read-more" href="/MalEx-doc/abstraction/value-set-analysis/">&raquo;</a></p>
+    </section>
+    <footer class=" footline" >
+         
+        
+
+        
+        
+
+    </footer>
+</article>
+
+
+
+
+	
+	   <article class="post abstraction">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/MalEx-doc/abstraction/function-call-graph/">Function Call Graph</a></h2>
+    </header>
+    <section class="post-excerpt">
+        <p> <a class="read-more" href="/MalEx-doc/abstraction/function-call-graph/">&raquo;</a></p>
+    </section>
+    <footer class=" footline" >
+         
+        
+
+        
+        
+
+    </footer>
+</article>
+
+
+
+
+	
+	   <article class="post abstraction">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/MalEx-doc/abstraction/instructions/">Instructions</a></h2>
+    </header>
+    <section class="post-excerpt">
+        <p> <a class="read-more" href="/MalEx-doc/abstraction/instructions/">&raquo;</a></p>
+    </section>
+    <footer class=" footline" >
+         
+        
+
+        
+        
+
+    </footer>
+</article>
+
+
+
+
+	
+	   <article class="post abstraction">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/MalEx-doc/abstraction/representation/">Representation</a></h2>
+    </header>
+    <section class="post-excerpt">
+        <p>What&rsquo;s inside l8r
+How the dependancies works. This tool generate representation of binaries using YAML meta language. Three type of assets can be generated.
+The header file File containing all the resources that can be loaded for a particular binary.
+example:
+file: binary_test arch: AMD64 metas: - something - something_else artefacts: - name: main filename: main.yaml symbol_name: main - name: call filename: call.yaml symbol_name: main  The function file File containing all the informations that belongs to a particular symbol within a binary. <a class="read-more" href="/MalEx-doc/abstraction/representation/">&raquo;</a></p>
+    </section>
+    <footer class=" footline" >
+         
+        
+
+        
+        
+
+    </footer>
+</article>
+
+
+
+
+	
+
+	<div style="margin-bottom:2rem"></div>
+
+	<nav class="pagination" role="navigation">
+	
+	<span class="page-number">Page 1 on 1</span>
+	
+</nav>
+
 
 
 
@@ -654,6 +783,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -661,6 +791,25 @@
                     
                     
 
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
                         
             
@@ -726,22 +875,6 @@
             
         
                     
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
             
         
                     
@@ -752,8 +885,10 @@
 
 
         
+            <a class="nav nav-prev" href="/MalEx-doc/isomorphism-detection/function-level-isomorphism-detection/" title="Function Level Isomorphism Detection"> <i class="fa fa-chevron-left"></i></a>
         
-            <a class="nav nav-next" href="/MalEx-doc/basics/" title="Basics" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        
+            <a class="nav nav-next" href="/MalEx-doc/abstraction/control-flow-recovery/" title="Control Flow Recovery" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 
@@ -780,4 +915,3 @@
 
   </body>
 </html>
-

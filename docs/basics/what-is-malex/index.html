@@ -7,7 +7,7 @@
     <meta name="description" content="">
 
 
-    <title> :: MalEx</title>
+    <title>What Is Malex :: MalEx</title>
     <link rel="shortcut icon" href="/MalEx-doc/images/favicon.png" type="image/x-icon" />
     <link href="/MalEx-doc/css/nucleus.css" rel="stylesheet">
     <link href="/MalEx-doc/css/font-awesome.min.css" rel="stylesheet">
@@ -31,7 +31,7 @@
     
 
   </head>
-  <body class="" data-url="/MalEx-doc/_header/">
+  <body class="" data-url="/MalEx-doc/basics/what-is-malex/">
     <nav id="sidebar" class="">
 
 
@@ -84,7 +84,7 @@
   
     
     <li data-nav-id="/MalEx-doc/basics/" class="dd-item 
-        
+        parent
         
         
         ">
@@ -95,7 +95,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -118,7 +118,7 @@
   
     
       <li data-nav-id="/MalEx-doc/basics/what-is-malex/" class="dd-item
-     
+     active
       ">
         <a href="/MalEx-doc/basics/what-is-malex/">
         <span>What Is Malex</span> 
@@ -452,6 +452,16 @@
                 <span class="links">
                 
 
+
+
+
+
+
+
+ <a href='/MalEx-doc/'></a> > <a href='/MalEx-doc/basics/'>Basics</a> > What Is Malex
+
+ 
+
  
 
    
@@ -461,7 +471,11 @@
     <div class="wrapper">
 <nav id="TableOfContents">
 <ul>
-<li><a href="#malex">Malex</a></li>
+<li>
+<ul>
+<li><a href="#malex">MalEx</a></li>
+<li><a href="#how-does-it-works">How does it works</a></li>
+</ul></li>
 </ul>
 </nav>
     </div>
@@ -472,7 +486,7 @@
         
         <div id="body-inner">
           
-            <h1></h1>
+            <h1>What Is Malex</h1>
           
 
 
@@ -480,9 +494,22 @@
 
 
 
-<h1 id="malex">Malex</h1>
+<h2 id="malex">MalEx</h2>
 
-<p>Binary abstractor</p>
+<p>MalEx is tool which aim to translate a binary to an abstract representation which will be used for further processing and perform naive isomorphism detection.</p>
+
+<h2 id="how-does-it-works">How does it works</h2>
+
+<p>MalEx extracts the following information from binaries:</p>
+
+<ol>
+<li>Function Calling Graph of the whole program</li>
+<li>Control Flow Graph of each function defined in the binary</li>
+<li>Value set of each register for each logic block in a function</li>
+<li>Assembly instructions</li>
+</ol>
+
+<p>Once these informations has been extracted, the data is structured in a yaml file which can later be analysed by other solutions.</p>
 
 
 <footer class=" footline" >
@@ -523,8 +550,6 @@
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -538,6 +563,7 @@
             
             
                 
+                    
                     
                 
                 
@@ -555,69 +581,8 @@
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
                         
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
                         
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
                     
                 
                 
@@ -710,6 +675,22 @@
             
         
                     
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
                         
             
             
@@ -742,6 +723,54 @@
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -752,8 +781,10 @@
 
 
         
+            <a class="nav nav-prev" href="/MalEx-doc/basics/" title="Basics"> <i class="fa fa-chevron-left"></i></a>
         
-            <a class="nav nav-next" href="/MalEx-doc/basics/" title="Basics" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        
+            <a class="nav nav-next" href="/MalEx-doc/basics/install/" title="Install" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 

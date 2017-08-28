@@ -7,7 +7,7 @@
     <meta name="description" content="">
 
 
-    <title> :: MalEx</title>
+    <title>The VF2 Algorithm :: MalEx</title>
     <link rel="shortcut icon" href="/MalEx-doc/images/favicon.png" type="image/x-icon" />
     <link href="/MalEx-doc/css/nucleus.css" rel="stylesheet">
     <link href="/MalEx-doc/css/font-awesome.min.css" rel="stylesheet">
@@ -31,7 +31,7 @@
     
 
   </head>
-  <body class="" data-url="/MalEx-doc/_header/">
+  <body class="" data-url="/MalEx-doc/isomorphism-detection/the-vf2-algorithm/">
     <nav id="sidebar" class="">
 
 
@@ -185,7 +185,7 @@
   
     
     <li data-nav-id="/MalEx-doc/isomorphism-detection/" class="dd-item 
-        
+        parent
         
         
         ">
@@ -196,7 +196,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -219,7 +219,7 @@
   
     
       <li data-nav-id="/MalEx-doc/isomorphism-detection/the-vf2-algorithm/" class="dd-item
-     
+     active
       ">
         <a href="/MalEx-doc/isomorphism-detection/the-vf2-algorithm/">
         <span>The VF2 Algorithm</span> 
@@ -452,6 +452,16 @@
                 <span class="links">
                 
 
+
+
+
+
+
+
+ <a href='/MalEx-doc/'></a> > <a href='/MalEx-doc/isomorphism-detection/'>Isomorphism Detections</a> > The VF2 Algorithm
+
+ 
+
  
 
    
@@ -461,7 +471,12 @@
     <div class="wrapper">
 <nav id="TableOfContents">
 <ul>
-<li><a href="#malex">Malex</a></li>
+<li>
+<ul>
+<li><a href="#algorithm">Algorithm</a></li>
+<li><a href="#how-does-it-works">How does it works</a></li>
+<li><a href="#example">Example</a></li>
+</ul></li>
 </ul>
 </nav>
     </div>
@@ -472,7 +487,7 @@
         
         <div id="body-inner">
           
-            <h1></h1>
+            <h1>The VF2 Algorithm</h1>
           
 
 
@@ -480,9 +495,115 @@
 
 
 
-<h1 id="malex">Malex</h1>
+<h2 id="algorithm">Algorithm</h2>
 
-<p>Binary abstractor</p>
+<p>The VF algorithm is an improvement of the VF algorithm. The application of this algorithm is to detect isomorphism and subgraph isomorphism. The improvement of VF2 is the requirement of a lower complexity (from O(N^2) to O(N))</p>
+
+<h2 id="how-does-it-works">How does it works</h2>
+
+<p>This algorithm implements a naive detection of isomorphism. In fact, it tries to map every node in a graph <em>G</em> into another graph <em>G&rsquo;</em>. This algorithm proceed node per node and</p>
+
+<h2 id="example">Example</h2>
+
+<p>For a given graph <code>G</code> composed of 3 nodes <code>{n1, n2, n3}</code> and 2 edges <code>{e1, e2}</code>. With <code>e1</code> links together <code>n1</code> and <code>n2</code>, <code>e2</code> links together <code>n2</code> and <code>n3</code>. And for another given graph <code>G'</code> composed of 3 nodes <code>{n1', n2', n3'}</code> with 2 edges <code>{e1', e2'}</code>. <code>e1'</code> links together <code>n1'</code> and <code>n2'</code> and <code>e2'</code> links together <code>n1'</code> and <code>n3'</code>.</p>
+
+<p>Below are the resolution steps to determine if <code>G</code> and <code>G'</code> are isomorphic</p>
+
+<table>
+<thead>
+<tr>
+<th align="center">Step</th>
+<th align="center">Explanation</th>
+<th align="center">Math</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">1</td>
+<td align="center">match empty G with empty G&rsquo;</td>
+<td align="center">G{} &lt;=&gt; G&rsquo;{}</td>
+</tr>
+
+<tr>
+<td align="center">2</td>
+<td align="center">define which which node in G&rsquo; n1 can match</td>
+<td align="center">n1 &lt;=&gt; <code>n1' or n2' or n3'</code></td>
+</tr>
+
+<tr>
+<td align="center">3</td>
+<td align="center">match <code>n1</code> and <code>n1'</code></td>
+<td align="center">n1 &lt;=&gt; n1&rsquo;</td>
+</tr>
+
+<tr>
+<td align="center">4</td>
+<td align="center">define which which node in G&rsquo; n2 can match</td>
+<td align="center">n2 &lt;=&gt; <code>n2</code> or <code>n3</code></td>
+</tr>
+
+<tr>
+<td align="center">5</td>
+<td align="center">match <code>n2</code> and <code>n2'</code></td>
+<td align="center">n2 &lt;=&gt; n2&rsquo;</td>
+</tr>
+
+<tr>
+<td align="center">6</td>
+<td align="center">define which node n3 match in G&rsquo;</td>
+<td align="center">n3 &lt;=&gt; {}</td>
+</tr>
+
+<tr>
+<td align="center">7</td>
+<td align="center">we can&rsquo;t match n3 so we fall back to step 3</td>
+<td align="center">n3 &lt;=&gt; {}</td>
+</tr>
+
+<tr>
+<td align="center">8</td>
+<td align="center"><code>n1</code> match <code>n2'</code></td>
+<td align="center">n1 &lt;=&gt; n2&rsquo;</td>
+</tr>
+
+<tr>
+<td align="center">9</td>
+<td align="center">define which remaining nodes in G&rsquo; can match n2</td>
+<td align="center">n2 &lt;=&gt; {n1&rsquo;, n3&rsquo;}</td>
+</tr>
+
+<tr>
+<td align="center">10</td>
+<td align="center">match n2 with n1&rsquo;</td>
+<td align="center">n2 &lt;=&gt; n1&rsquo;</td>
+</tr>
+
+<tr>
+<td align="center">11</td>
+<td align="center">define which node can be matched no n3</td>
+<td align="center">n3 &lt;=&gt; {n3&rsquo;}</td>
+</tr>
+
+<tr>
+<td align="center">12</td>
+<td align="center">match n3 and n3`</td>
+<td align="center">n3 &lt;=&gt; n3&rsquo;</td>
+</tr>
+
+<tr>
+<td align="center">13</td>
+<td align="center">all nodes in G and G&rsquo; are mapped</td>
+<td align="center">G &lt;=&gt; G&rsquo; or {n1, n2, n3} &lt;=&gt; {n2&rsquo;, n1&rsquo;, n3&rsquo;}</td>
+</tr>
+
+<tr>
+<td align="center">14</td>
+<td align="center">G and G&rsquo; are Isomorphic</td>
+<td align="center">*</td>
+</tr>
+</tbody>
+</table>
 
 
 <footer class=" footline" >
@@ -590,6 +711,75 @@
             
                 
                     
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
                 
                 
 
@@ -646,70 +836,6 @@
             
         
                     
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
                         
             
             
@@ -752,8 +878,10 @@
 
 
         
+            <a class="nav nav-prev" href="/MalEx-doc/isomorphism-detection/" title="Isomorphism Detections"> <i class="fa fa-chevron-left"></i></a>
         
-            <a class="nav nav-next" href="/MalEx-doc/basics/" title="Basics" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        
+            <a class="nav nav-next" href="/MalEx-doc/isomorphism-detection/program-level-isomorphism-detection/" title="Program Level Isomorphism Detection" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 

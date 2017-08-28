@@ -15,3 +15,7 @@ MalEx extracts the following information from binaries:
 5. Assembly instructions translated to the Vex language
 
 Once these informations has been extracted, the data is structured in a yaml file which can later be analysed by other solutions.
+
+## Isomorphism detection
+
+This feature has been added as an improvement. The functioan

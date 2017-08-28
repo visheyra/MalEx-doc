@@ -7,7 +7,7 @@
     <meta name="description" content="">
 
 
-    <title> :: MalEx</title>
+    <title>Isomorphism Detections :: MalEx</title>
     <link rel="shortcut icon" href="/MalEx-doc/images/favicon.png" type="image/x-icon" />
     <link href="/MalEx-doc/css/nucleus.css" rel="stylesheet">
     <link href="/MalEx-doc/css/font-awesome.min.css" rel="stylesheet">
@@ -31,7 +31,7 @@
     
 
   </head>
-  <body class="" data-url="/MalEx-doc/_header/">
+  <body class="" data-url="/MalEx-doc/isomorphism-detection/">
     <nav id="sidebar" class="">
 
 
@@ -185,8 +185,8 @@
   
     
     <li data-nav-id="/MalEx-doc/isomorphism-detection/" class="dd-item 
-        
-        
+        parent
+        active
         
         ">
       <a href="/MalEx-doc/isomorphism-detection/">
@@ -196,7 +196,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -287,7 +287,7 @@
     
     <li data-nav-id="/MalEx-doc/abstraction/" class="dd-item 
         
-        
+        active
         
         ">
       <a href="/MalEx-doc/abstraction/">
@@ -452,6 +452,11 @@
                 <span class="links">
                 
 
+
+
+
+ <a href='/MalEx-doc/'></a> > Isomorphism Detections
+
  
 
    
@@ -459,11 +464,7 @@
             </div>
             <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents">
-<ul>
-<li><a href="#malex">Malex</a></li>
-</ul>
-</nav>
+
     </div>
 </div>
 
@@ -472,7 +473,7 @@
         
         <div id="body-inner">
           
-            <h1></h1>
+            <h1>Isomorphism Detections</h1>
           
 
 
@@ -480,14 +481,99 @@
 
 
 
-<h1 id="malex">Malex</h1>
-
-<p>Binary abstractor</p>
-
-
 <footer class=" footline" >
 	
 </footer>
+
+
+
+	
+
+	<div class="extra-pagination inner">
+	<nav class="pagination" role="navigation">
+	
+	<span class="page-number">Page 1 on 1</span>
+	
+</nav>
+
+	</div>
+
+	
+	   <article class="post Isomorphism Detection">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/MalEx-doc/isomorphism-detection/the-vf2-algorithm/">The VF2 Algorithm</a></h2>
+    </header>
+    <section class="post-excerpt">
+        <p>Algorithm The VF algorithm is an improvement of the VF algorithm. The application of this algorithm is to detect isomorphism and subgraph isomorphism. The improvement of VF2 is the requirement of a lower complexity (from O(N^2) to O(N))
+How does it works This algorithm implements a naive detection of isomorphism. In fact, it tries to map every node in a graph G into another graph G&rsquo;. This algorithm proceed node per node and <a class="read-more" href="/MalEx-doc/isomorphism-detection/the-vf2-algorithm/">&raquo;</a></p>
+    </section>
+    <footer class=" footline" >
+         
+        
+
+        
+        
+
+    </footer>
+</article>
+
+
+
+
+	
+	   <article class="post Isomorphism Detection">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/MalEx-doc/isomorphism-detection/program-level-isomorphism-detection/">Program Level Isomorphism Detection</a></h2>
+    </header>
+    <section class="post-excerpt">
+        <p>Idea The idea behind program level detection is simple. In MalEx it means that once the control flow graph of a binary is recovered, it can be compared to such graphs from other binaries through the VF2 algorithm.
+Examples soon <a class="read-more" href="/MalEx-doc/isomorphism-detection/program-level-isomorphism-detection/">&raquo;</a></p>
+    </section>
+    <footer class=" footline" >
+         
+        
+
+        
+        
+
+    </footer>
+</article>
+
+
+
+
+	
+	   <article class="post Isomorphism Detection">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/MalEx-doc/isomorphism-detection/function-level-isomorphism-detection/">Function Level Isomorphism Detection</a></h2>
+    </header>
+    <section class="post-excerpt">
+        <p>Idea The idea behind function level detection is simple. In MalEx it means that every functions symbol that can be extracted from a binary will be compared. In a first time, the control flow of the symbols are extracted as DiGraph&rsquo;s. Those DiGraph are then matched one against each using VF2 Algorithm to detect Isomorphism.
+Examples soon <a class="read-more" href="/MalEx-doc/isomorphism-detection/function-level-isomorphism-detection/">&raquo;</a></p>
+    </section>
+    <footer class=" footline" >
+         
+        
+
+        
+        
+
+    </footer>
+</article>
+
+
+
+
+	
+
+	<div style="margin-bottom:2rem"></div>
+
+	<nav class="pagination" role="navigation">
+	
+	<span class="page-number">Page 1 on 1</span>
+	
+</nav>
+
 
 
 
@@ -590,6 +676,74 @@
             
                 
                     
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
                 
                 
 
@@ -646,70 +800,6 @@
             
         
                     
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
                         
             
             
@@ -752,8 +842,10 @@
 
 
         
+            <a class="nav nav-prev" href="/MalEx-doc/basics/usage/" title="Usage"> <i class="fa fa-chevron-left"></i></a>
         
-            <a class="nav nav-next" href="/MalEx-doc/basics/" title="Basics" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        
+            <a class="nav nav-next" href="/MalEx-doc/isomorphism-detection/the-vf2-algorithm/" title="The VF2 Algorithm" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 
@@ -780,4 +872,3 @@
 
   </body>
 </html>
-

@@ -1,7 +1,6 @@
 ---
 title: "Representation"
 date: 2017-08-26T13:33:18+02:00
-draft: true
 weight: 5
 ---
 
