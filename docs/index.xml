@@ -115,7 +115,7 @@ Options    options switch usage     help -h Show help   binaries -b List of the 
       <pubDate>Sat, 26 Aug 2017 13:33:18 +0200</pubDate>
       
       <guid>https://visheyra.github.io/MalEx-doc/abstraction/representation/</guid>
-      <description>What&amp;rsquo;s inside l8r
+      <description>What&amp;rsquo;s inside soon
 How the dependancies works. This tool generate representation of binaries using YAML meta language. Three type of assets can be generated.
 The header file File containing all the resources that can be loaded for a particular binary.
 example:
